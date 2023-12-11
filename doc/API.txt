@@ -1,0 +1,13 @@
+Asteroids - NeoWs
+https://api.nasa.gov/
+
+https://api.nasa.gov/neo/rest/v1/feed?start_date=2023-11-28&end_date=2023-11-28&api_key=DEMO_KEY
+
+start_date	YYYY-MM-DD	none	Starting date for asteroid search
+end_date	YYYY-MM-DD	7 days after start_date	Ending date for asteroid search
+api_key	string	DEMO_KEY	api.nasa.gov key for expanded usage
+
+GET https://api.nasa.gov/neo/rest/v1/feed?start_date=START_DATE&end_date=END_DATE&api_key=API_KEY
+
+Example query
+https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=DEMO_KEY

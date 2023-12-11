@@ -1,0 +1,42 @@
+#info{
+    position: relative;
+    width: 20px;
+    top: 20px;
+    left: 20px;
+    transition: all .2s ease-in-out;
+    cursor: help;
+}
+
+#info:hover{
+    transform: scale(1.4);
+}
+
+#cosa_propio, .modalDatos{
+    color: #fff;
+    position: fixed;
+    top:0%;
+    left:0%;
+    background: rgba(10, 10, 10, 0.9);
+    height: 100vh;
+    width: 100%;
+}
+
+#cosa_propio p, .modalDatos p{
+    text-align: center;
+}
+
+#cosa_propio .contenidoModal{
+    margin: auto;
+    text-align: center;
+    width: 40%;
+}
+
+.controles{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.modalDatos .contenidoModal{
+    width: 100% !important;
+}
+

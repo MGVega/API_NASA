@@ -1,0 +1,52 @@
+@import url('../fonts/waukegan-ldo/style.css');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Waukegan LDO Regular', sans-serif;
+}
+
+body {
+    background-image: url('../images/background1.jpg');
+    background-size: cover;
+}
+
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    width: 120px;
+    cursor: pointer;
+}
+
+.principal {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    color: #fff;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    background: rgba(10, 10, 10, 0.9);
+    border-radius: 30px;
+    border: solid 5px rgb(34, 39, 44);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.opcionesMenu{
+    margin-top:20px !important;
+}
+
+.controles{
+    display: flex;
+    
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/nasa.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/modal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>API NASA</title>
+</head>
+
+<body>
+    <div id="principal" class="principal">
+        <div class="logo d-none d-md-block"><a href="https://api.nasa.gov/" target="_blank"><img src="./images/nasa.png"></a></div>
+        <div class="menu">
+            <div id="info"><b><i class="bi bi-question-circle" onclick="ayuda()"></i></b></div>
+            <div class="container">
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <h1>
+                            <div id="bienvenida"></div>
+                        </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p>Hoy hay un total de <strong id="numHoy" class="text-warning"></strong> objetos cercanos</p>
+                    </div>
+                </div>
+                <div class="row opcionesMenu" id="opcionesMenu">
+                    <div class="col-12">
+                        <h5>Opciones:</h5>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <p>Ver mis seguimientos:</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-1">
+                        <button class="btn btn-primary" onclick="almacen()">Mis seguimientos <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+                <hr>
+                <div class="row opcionesMenu">
+                    <div class="col-12">
+                        <p>Comprobar entre frechas:</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="desde">Desde:</label>
+                        <input type="date" id="desde">
+                    </div>
+                    <div class="col-6">
+                        <label for="hasta">Hasta:</label>
+                        <input type="date" id="hasta">
+                    </div>
+                </div>
+                <div class="row opcionesMenu">
+                    <div class="col-12">
+                        <button class="btn btn-primary" onclick="buscar()">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal de info de la página-->
+    <div id="cosa_propio" class="d-flex justify-content-center align-items-center d-none">
+        <div>
+            <div class="contenidoModal">
+                <div>
+                    <h1>Bienvenido a NASA - NeoWs</h1>
+                    <p>La API "Asteroids - NeoWs" de la NASA, también conocida como Near Earth Object Web Service,
+                        proporciona información sobre asteroides cercanos a la Tierra (NEOs). Los NEOs son asteroides y
+                        cometas cuyas órbitas los acercan a la órbita terrestre, y la NASA monitorea estos objetos para
+                        evaluar cualquier posible amenaza de impacto.</p>
+                </div>
+                <button class="btn btn-primary" onclick="cerrarAyuda()">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/pagIndex.js" defer></script>
+<script src="./js/script.js" defer></script>
+<script src="./js/bienvenida.js" defer></script>
+
+</html>
